@@ -1,0 +1,36 @@
+* {
+  border-spacing: border-box;
+}
+
+@font-face {
+  font-family: InterVariableFont;
+  src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+  font-family: InterVariableFont;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+body .main-container {
+  margin: 100px auto;
+  background-color: hsl(0, 0%, 12%);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border-radius: 15px;
+}
+body .main-container img {
+  border-radius: 50px;
+  width: 65px;
+  height: 65px;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
