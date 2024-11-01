@@ -1,35 +1,80 @@
 * {
-  border-spacing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: InterVariableFont;
-  src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "Inter";
+  src: URL("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
 }
 body {
-  font-family: InterVariableFont;
-  background-color: hsl(0, 0%, 8%);
+  margin: 0;
+  position: relative;
+  font-family: "Inter";
   color: hsl(0, 0%, 100%);
 }
-body .main-container {
-  margin: 100px auto;
-  background-color: hsl(0, 0%, 12%);
-  padding: 25px;
+body .bg-wrapper {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body .bg-wrapper .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 250px;
-  border-radius: 15px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 250px;
 }
-body .main-container img {
+body .bg-wrapper .main-container .avatar-img {
+  height: 60px;
+  width: 60px;
   border-radius: 50px;
-  width: 65px;
-  height: 65px;
+  margin: 10px;
+}
+body .bg-wrapper .main-container h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+body .bg-wrapper .main-container h2 {
+  margin-top: 0;
+  font-size: 10px;
+  color: hsl(75, 94%, 57%);
+}
+body .bg-wrapper .main-container p {
+  font-size: 8px;
+  margin-bottom: 15px;
+}
+body .bg-wrapper .main-container .link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+body .bg-wrapper .main-container .link-container a {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 20%);
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+body .bg-wrapper .main-container .link-container a:active, body .bg-wrapper .main-container .link-container a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
 }
 body .attribution {
+  position: absolute;
+  bottom: 10px;
   font-size: 11px;
   text-align: center;
-  color: hsl(0, 0%, 100%);
 }
 body .attribution a {
   color: hsl(228, 45%, 44%);
